@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="activity_1">Activity 1</string>
+    <string name="open_activity_2">Open activity 2</string>
+    <string name="name">Name</string>
+    <string-array name="Options">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+</resources>

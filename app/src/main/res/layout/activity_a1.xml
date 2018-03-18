@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.espen.lab1.A1">
+
+    <TextView
+        android:id="@+id/act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="@string/activity_1" />
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:text="@string/open_activity_2" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/B1"
+        android:autofillHints="Choose an option"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_marginBottom="95dp"
+        android:entries="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/T1"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Insert your name"
+        android:inputType="textPersonName" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+</RelativeLayout>
